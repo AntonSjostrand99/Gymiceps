@@ -1,72 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 body{
-background-color: #2d2d2d;
+
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Space Mono', monospace;
+
 
 }
 
+.topNav {
+
+height: 2.2vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.topNav__inner {
+
+height: 100%;
+width: 75%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+}
 
 .nav {
-    background-color: #333;
-    color: #fff;
-    width: 100vw;
-    height: auto;
-}
+background-color: yellow;
+width: 100vw;
+height: 8vh;
+display: flex;
+justify-content: center;
+align-items: center;
 
+    
+}
+    
 .navbar {
+width: 75%;
+height: 100%;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center; 
+}
+    
+.navbar_info-1 {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+    
+.navbar_info-2 {   
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
-    margin: 0 auto;
-    background-color: #333;
-}
+   
 
-.nav2 {
-    background-color: #333;
-    color: #fff;
-    width: 100vw;
-    height: auto;
 }
-
-.navbar2 {
+    
+.navbar_info-3 { 
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: 6vh;
-    margin: 0 auto;
-    background-color: black;
+gap: 1rem;
 }
+    
 
 .logo {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #333;
+
+color: #eeeeee;
+text-decoration: none;
+font-size: 24px;
 }
 
-.menu {
-    list-style: none;
+.material-symbols-outlined {
+
+color: #eeeeee;
+font-size: 16px;
+
+}
+
+
+.search {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.searchbar {
+display: flex;
+flex-direction: row;
+}
+
+.searchbar__input {
+
+    width: 180px;
+    height: 25px;
+ 
+  
+
+}
+
+
+.searchbar__button {
+
+   
+ 
+
+}
+
+
+.homePage {
+
+background-color: #333333;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: black;
 }
 
-.menu li {
-    margin-right: 1rem;
-    background-color: black;
-}
 
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-   
-}
 
 
 .logo-news {
@@ -75,10 +142,10 @@ height: 100%;
 
 }
 
-article {
+.article123 {
 
-    height: 92vh;
-    width: 100vw;
+height: 92vh;
+width: 75%;
 
 }
 
@@ -86,21 +153,178 @@ article {
 
 height: 92vh;
 width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 2rem;
 
 }
 
 #nocco{
 
-height: 300px;
+height: 400px;
 width: 400px;
 
 }
+
+
+
+
+
+
+.inspo_section {
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+
+}
+
+.inspo-section-1 {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 75%;
+  
+  
+}
+    
+.inspo-section--left {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;   
+}
+    
+.inspo-section--right {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+}
+    
+  
+
+    
+    aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    }
+    
+
+
+
+.cards {
+    margin: 0 auto;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-auto-rows: auto;
+    gap: 25px;
+    font-family: sans-serif;
+    padding-top: 2px;
+    
+}
+
+
+
+
+.cards * {
+    box-sizing: border-box;
+}
+
+
+.card {
+
+background-color: #a970ff;
+display: flex;
+flex-direction: column;
+
+
+
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 17px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    width: 100%;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+/* .card__info--button {
+
+background-color: #555555;
+padding: 7px 50px;
+
+} */
+
+
+.card__info--button {
+    background-color: #a970ff;
+    font-weight: 600;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    opacity: 1;
+    color: black;
+  
+  
+}
+
+.card__info--button:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
 
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .container {
@@ -112,69 +336,3 @@ footer {
 footer p {
     font-size: 14px;
 }
-
-
-.testNav {
-background-color: red;
-width: 100vw;
-height: 7vh;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-.testNavbar {
-
-width: 75%;
-height: 100%;
-background-color: black;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-}
-
-.test1 {
-
-display: flex;
-flex-direction: row;
-gap: 1rem;
-
-}
-
-.test2 {
-
-
-
-}
-
-.test3 {
-
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.about_Section {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.about_Section--article {
-    
-margin-top: 3rem;    
-width: 60%;
-height: 300px;
-border: 2px solid black;
-    
-}
-
-
-
-
-
