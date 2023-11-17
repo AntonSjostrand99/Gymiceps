@@ -529,3 +529,27 @@ footer p {
     justify-content: center;
   }
   
+
+
+
+  /* Stilar för större skärmar, som PC */
+@media only screen and (min-width: 1024px) {
+  .topNav__inner {
+    width: 40%;
+  }
+
+  .navbar {
+    width: 70%;
+  }
+}
+
+/* Stilar för mindre skärmar, som laptops och surfplattor */
+@media only screen and (max-width: 1023px) {
+  .topNav__inner {
+    width: 80%;
+  }
+
+  .navbar {
+    width: 90%;
+  }
+}
