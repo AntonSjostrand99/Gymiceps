@@ -34,7 +34,7 @@ color: #eeeeee;
   background-color: #a970ff;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px 5px;
   border-radius: 4px;
   transition: background-color 0.3s ease; 
 
@@ -48,7 +48,7 @@ color: #eeeeee;
 
 .topNav {
 
-height: 2.7vh;
+height: 1.6rem;
 width: 100vw;
 display: flex;
 justify-content: center;
@@ -74,14 +74,12 @@ font-size: 14px;
 }
 
 .nav {
-  background-color: black;
+background-color: black;
 width: 100vw;
-height: 8vh;
+height: 4rem;
 display: flex;
 justify-content: center;
 align-items: center;
-
-    
 }
     
 .navbar {

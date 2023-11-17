@@ -20,7 +20,7 @@ width: 100%;
     
 .fullscreen-image__section {
 width: 100vw;
-height: 89.3vh;
+height: calc(100vh - 1.6rem - 4rem);
 display: flex;
 align-items: center;
 justify-content: center;
