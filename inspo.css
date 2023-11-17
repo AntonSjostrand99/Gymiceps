@@ -1,0 +1,83 @@
+.inspo__section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+width: 100vw;
+}
+    
+.inspo__section-inner {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width: 73%;
+}
+        
+.inspo__section-top {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+}
+
+   
+    
+.inspo__section-top-inner {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+width: 75%;
+}
+    
+#inspo__section-top-inner-image-container-style {
+width: 600px;
+height: 265px;
+}
+    
+.inspo__section-top-inner-image-container {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+    
+.inspo__section-top-inner-text-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Justera skuggan efter behov */
+}
+    
+.inspo__section-top-inner-color-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(58, 53, 53, 0.8);
+}
+    
+.inspo__section-inner-heading {    
+text-rendering: optimizeLegibility;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 32px;
+}
+        
+.inspo__section-inner-heading::before,
+.inspo__section-inner-heading::after {
+ content: '';
+display: inline-block;
+height: 1px; /* Höjden på linjen, justera efter behov */
+width: 200px; /* Bredden på linjen på varje sida, justera efter behov */
+background-color: #000; /* Färgen på linjen, justera efter behov */
+margin: 8px 18px; /* Avståndet mellan linjen och texten, justera efter behov */
+}
+             

@@ -11,155 +11,167 @@
 <body>
     
  
-    <header class="nav">
-        <nav class="navbar">
-          
-            <div class="navbar_info-1" >
-                <span class="material-symbols-outlined">
-                    menu
-                    </span>
-                    <a href="index.html" class="logo">Gymiceps</a>
-
-            </div>
+  
+  <nav class="topNav">
+    <nav class="topNav__inner">
+        <h3 class="topNav__inner-heading">Gratis leverans över 500kr</h3>
+        <h3 class="topNav__inner-heading">1-2 dagar leveranstid</h3>
+        <button onclick="myFunction()">Darkmode</button>
+        
+    </nav>
     
-                <div class="navbar_info-2">
-                    <input type="text" name="text" class="input" placeholder="Search">
-                    <button class="search__btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
-                        <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z" fill="#efeff1"></path>
-                      </svg>
-                    </button>
-                  </div>
-            
-            <div class="navbar_info-3" >
-                <h1 class="material-symbols-outlined">
-                    shopping_cart
-                </h1>
-                <h1 class="material-symbols-outlined">
-                    person
-                </h1>
+</nav>
+
+
+
+<header class="nav">
+    <nav class="navbar">
+        <div class="navbar_info-1">
+            <div class="overlay" id="overlay"></div>
+            <div class="burger-menu" id="burger-menu">
+              <div class="burger-icon" id="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="menu-list">
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/produkt.html">Kosttillskott</a></li>
+                <li><a href="/dryck.html">Dryck</a></li>
+                <li><a href="/inspo.html">Inspo</a></li>
+              </ul>
             </div>
+              <a href="index.html" class="logo">Gymiceps</a>
+          </div>
 
-        </nav>
+            <div class="navbar_info-2">
+                <div class="search">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Sök" class="searchbar__input">
+                        <button class="searchbar__button"> Sök</button>
+                    </div>
+
+                </div>
+              </div>
+        
+        <div class="navbar_info-3" >
+            <h1 class="material-symbols-outlined">
+                shopping_cart
+            </h1>
+            <h1 class="material-symbols-outlined">
+                person
+            </h1>
+        </div>
+
+    </nav>
 
 
-    </header>
-   
+</header>
+
+
+<section class="category__section">
+  <section class="category__section-inner">
+      <h1 class="category__section-inner-heading">Kosttillskott</h1>
+      <p class="category__section-inner-text">Här hittar du vårt utbud av kosttillskott till både män och kvinnor, elitidrottare och motionärer, avsedda för att underlätta, främja och stödja dig i din träning, kosthållning och dina mål.</p>
+  </section>
+</section>
+
+
 
     <section class="filter-navigation__section">
-        <article class="filter-navigation__article">
-            <div class="filter-navigation__article-box">Filterta </div>
-            <div class="filter-navigation__article-box">Sortera</div>
-        </article>
-     </section>
+      <article class="filter-navigation__article">
+          <div class="filter-navigation__article-box">Filterta &#11206;</div>
+          <div class="filter-navigation__article-box">Sortera &#11206;</div>
+          <div class="filter-navigation__article-box">Märke &#11206;</div>
+      </article>
+   </section>
 
 
-    <div class="cards">
-        <div class="card">
-          <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1544_1.jpg?m=1691739918?w=300" alt="">
-          <div class="card__content">
-            <p>
-                NOCCO Skum Nisse
-            </p>
-          </div>
-          <div class="card__info">
-            <div>
-             <button class="card__info--button">Lägg i varukorg</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-            <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-4_1.jpg?m=1635410928" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-               <button class="card__info--button">Lägg i varukorg</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-17_1.jpg?m=1635410241" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-7_1.jpg?m=1635411013" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="https://tyngre.shimmercat.cloud/wp-content/uploads/tyngre_berry_liquorice_trag.png" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="https://tyngre.shimmercat.cloud/wp-content/uploads/tyngre_barebells_salty_chocolate_trag.png" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src=" https://tyngre.shimmercat.cloud/wp-content/uploads/tyngre_barebells_coco_choco.png" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="https://tyngre.shimmercat.cloud/wp-content/uploads/tyngre_barebells_minty_chocolate.png" alt="">
-            <div class="card__content">
-              <p>
-                  NOCCO Skum Nisse
-              </p>
-            </div>
-            <div class="card__info">
-              <div>
-               <button class="card__info--button">Lägg i varukorg</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   <section class="cards">
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-7_1.jpg?m=1635411013" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-2_1.jpg?m=1635410351" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-4_1.jpg?m=1635410928" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-17_1.jpg?m=1635410241" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
 
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-52245_1.jpg?m=1698746838?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-700057_1.jpg?m=1661246302?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-582333_1.jpg?m=1667293642?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-69000_1.jpg?m=1680005337?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+ 
+    <div class="card">
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8747_1.jpg?m=1694586266?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+
+    <div class="card">
+      <img class="card__image" src=" https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-5851_1.jpg?m=1699514938?w=300" alt="" id="card__image-style">
+      <h1 class="card__heading">Tailored Jeans</h1>
+      <p class="card__amount">24x330ml</p>
+      <p class="card__price">449:-</p>
+      <button class="card__button">Lägg till i varukorg</button>
+    </div>
+  
+  
+
+
+ 
+
+   
+
+      
+    
+</section>
 
 
 
@@ -168,27 +180,36 @@
      
 
 
-      <footer class="footer">
-        <section class="footer__inner">
-            <article>
-                <h3>hfghgdh</h3>
-                <h3>hfghgdh</h3>
-                <h3>hfghgdh</h3>
-            </article>
-            <article>
-                <h3>hfghgdh</h3>
-                <h3>hfghgdh</h3>
-            </article>
-            <article>
-                <h3>hfghgdh</h3>
-                <h3>hfghgdh</h3>
-            </article>
-        </section>
-       
-    
-    </footer>
+<footer class="footer">
+  <section class="footer__inner">
+      <article class="footer__inner-article">
+          <h1>Kundservice</h1>
+          <h3>Köpvillkor</h3>
+          <h3>Prisgaranti</h3>
+          <h3>Retur och Byten</h3>
+      </article>
+      <article class="footer__inner-article">
+          <h1>Shopping</h1>
+          <h3>Vaurmärken</h3>
+          <h3>Guide</h3>
+          <h3>Presentkort</h3>
+      </article>
+      <article class="footer__inner-article">
+          <h1>Information</h1>
+          <h3>Karriär</h3>
+          <h3>Samarbeten</h3>
+          <h3>Om Gymiceps</h3>
+      </article>
+  </section>
+  <section class="footer__inner-bottom">
 
+    <p>&copy; 2023 Gymiceps. Alla rättigheter förbehållna.</p>
+  </section>
+ 
 
+</footer>
 
+<button onclick="topFunction()" id="GoToTop__Button" title="Go to top">Gå upp</button>
+    <script src="script.js"></script>
 </body>
 </html>
