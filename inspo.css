@@ -77,7 +77,7 @@ font-size: 32px;
 display: inline-block;
 height: 1px; /* Höjden på linjen, justera efter behov */
 width: 200px; /* Bredden på linjen på varje sida, justera efter behov */
-background-color: #000; /* Färgen på linjen, justera efter behov */
+background-color: #adb5bd; /* Färgen på linjen, justera efter behov */
 margin: 8px 18px; /* Avståndet mellan linjen och texten, justera efter behov */
 }
              
