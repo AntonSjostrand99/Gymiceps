@@ -8,67 +8,68 @@
     <link rel="stylesheet" href="kompo.css">
     <link rel="stylesheet" href="inspo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    
 
 </head>
 <body>
- 
-    <nav class="topNav">
-        <nav class="topNav__inner">
-            <h3 class="topNav__inner-heading">Gratis leverans över 500kr</h3>
-            <h3 class="topNav__inner-heading">1-2 dagar leveranstid</h3>
-            <button onclick="myFunction()">Darkmode</button>
-            
-        </nav>
-        
+
+  <nav class="topNav">
+    <nav class="topNav__inner">
+        <h3 class="topNav__inner-heading">Gratis leverans över 599kr</h3>
+        <h3 class="topNav__inner-heading">1-2 dagar leveranstid</h3>
+        <h3 class="topNav__inner-heading">100% Nöjda kunder</h3>
+        <!-- <button onclick="myFunction()">Darkmode</button> -->
     </nav>
-
-
-
-    <header class="nav">
-        <nav class="navbar">
-            <div class="navbar_info-1">
-                <div class="overlay" id="overlay"></div>
-                <div class="burger-menu" id="burger-menu">
-                  <div class="burger-icon" id="burger-icon">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                  </div>
-                  <ul class="menu-list">
-                    <li><a href="/index.html">Hem</a></li>
-                    <li><a href="/produkt.html">Kosttillskott</a></li>
-                    <li><a href="/dryck.html">Dryck</a></li>
-                    <li><a href="/inspo.html">Inspo</a></li>
-                  </ul>
-                </div>
-                  <a href="index.html" class="logo">Gymiceps</a>
+</nav>
+ 
+  <header class="nav">
+    <nav class="navbar" id="navbar">
+        <div class="navbar__info-1">
+            <div class="overlay" id="overlay"></div>
+            <div class="burger-menu" id="burger-menu">
+              <div class="burger-icon" id="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
               </div>
-
-                <div class="navbar_info-2">
-                    <div class="search">
-                        <div class="searchbar">
-                            <input type="text" placeholder="Sök" class="searchbar__input">
-                            <button class="searchbar__button"> Sök</button>
-                        </div>
-    
-                    </div>
-                  </div>
-            
-            <div class="navbar_info-3" >
-                <h1 class="material-symbols-outlined">
-                    shopping_cart
-                </h1>
-                <h1 class="material-symbols-outlined">
-                    person
-                </h1>
+              <ul class="menu-list">
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/produkt.html">Kosttillskott</a></li>
+                <li><a href="/dryck.html">Dryck</a></li>
+                <li><a href="/inspo.html">Inspo</a></li>
+              </ul>
             </div>
+              <a href="index.html" class="logo">Gymiceps</a>
+          </div>
 
-        </nav>
-
-
-    </header>
-
+            <div class="navbar__info-2">
+                <div class="search">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Sök produkt" class="searchbar__input">
+                        <button class="searchbar__button"> <i class="fas fa-search"></i> <!-- Font Awesome sökikon --></button>
+                    </div>
+                </div>
+              </div>
+        
+        <div class="navbar__info-3" >
+            <div class="navbar__info-3-cart-icon">
+                <svg  width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="navbar__info-3-cart-icon-text">Kundvagn</p>
+              </div>
+              <div class="navbar__info-3-user-icon">
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="34px" height="34px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 0C5.56717 0 4 1.56567 4 3.49804C4 5.43041 5.56717 6.99609 7.5 6.99609C9.43283 6.99609 11 5.43041 11 3.49804C11 1.56567 9.43283 0 7.5 0Z" fill="#fff"/>
+                <path d="M5.5 8.99414C3.56711 8.99414 2 10.5605 2 12.4936V14.9909H13V12.4936C13 10.5605 11.4329 8.99414 9.5 8.99414H5.5Z" fill="#fff"/>
+                </svg>
+                <p class="navbar__info-3-user-icon-text">Mina sidor</p>
+              </div>
+        </div>
+    </nav>
+</header>
 
 
 
@@ -86,12 +87,12 @@
       <section class="inspo__section-top">
         <section class="inspo__section-top-inner">
           <div class="inspo__section-top-inner-image-container">
-            <img src="https://d3a6ymj7hfz0cs.cloudfront.net/wp-content/uploads/2021/10/Bildsspelsbanners-KosttillskottsGuide3_211021-kopiera-594x265.jpg" alt="">
+            <img src="https://d3a6ymj7hfz0cs.cloudfront.net/wp-content/uploads/2021/10/Bildsspelsbanners-KosttillskottsGuide3_211021-kopiera-594x265.jpg" alt="Kosttillskottguide" id="inspo__section-top-inner-image-container-style">
             <div class="inspo__section-top-inner-color-overlay"></div>
             <div class="inspo__section-top-inner-text-overlay">Kosttillskottguide</div>
           </div>
           <div class="inspo__section-top-inner-image-container">
-            <img src="https://d3a6ymj7hfz0cs.cloudfront.net/wp-content/uploads/2021/10/Bildsspelsbanners-KosttillskottsGuide5_211021-kopiera-594x265.jpg" alt="">
+            <img src="https://d3a6ymj7hfz0cs.cloudfront.net/wp-content/uploads/2021/10/Bildsspelsbanners-KosttillskottsGuide5_211021-kopiera-594x265.jpg" alt="Kostprogram" id="inspo__section-top-inner-image-container-style">
             <div class="inspo__section-top-inner-color-overlay"></div>
             <div class="inspo__section-top-inner-text-overlay">Kostprogram</div>
           </div>
@@ -101,12 +102,12 @@
       <section class="inspo__section-top">
         <section class="inspo__section-top-inner">
           <div class="inspo__section-top-inner-image-container">
-            <img src="/img/pexels-andrea-piacquadio-863926.jpg" alt=""  id="inspo__section-top-inner-image-container-style">
+            <img src="/img/pexels-andrea-piacquadio-863926.jpg" alt="Träningsprogram"  id="inspo__section-top-inner-image-container-style">
             <div class="inspo__section-top-inner-color-overlay"></div>
             <div class="inspo__section-top-inner-text-overlay">Träningsprogram</div>
           </div>
           <div class="inspo__section-top-inner-image-container">
-            <img src="/img/pexels-engin-akyurt-1435904.jpg" alt=""  id="inspo__section-top-inner-image-container-style">
+            <img src="/img/pexels-engin-akyurt-1435904.jpg" alt="Recept"  id="inspo__section-top-inner-image-container-style">
             <div class="inspo__section-top-inner-color-overlay"></div>
             <div class="inspo__section-top-inner-text-overlay">Recept</div>
           </div>
@@ -119,15 +120,15 @@
       <h2 class="inspo__section-inner-heading">Träna rätt</h2>
         <section class="inspo__section-inner">
             <div class="card__video">
-                <div class="video-container">
+                <div class="card__video-video-container">
                   <video controls>
-                    <source src="/img/crossfit_-_65660 (540p).mp4" type="video/mp4">
+                    <source src="/img/crossfit_-_65660 (540p).mp4" type="video/mp4" alt="Träna bröst och axlar videon">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <div class="text-container">
-                  <h2>Card Title</h2>
-                  <p>This is some example text describing the content of the card. You can add more details here.</p>
+                <div class="card__video-text-container">
+                  <h2 class="card__video-text-container-heading">Träna bröst och axlar</h2>
+                  <p class="card__video-text-container-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, incidunt recusandae commodi debitis cumque, nostrum voluptatibus rerum obcaecati odit voluptatum tempore optio soluta rem ut earum iste voluptatem porro voluptates!</p>
                 </div>
               </div>
               
@@ -137,37 +138,21 @@
     
         <section class="inspo__section-inner">
             <div class="card__video">
-                <div class="video-container">
+                <div class="card__video-video-container">
                   <video controls>
-                    <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HEA-fdBPiqmr4hqr/videoblocks-hispanic-woman-jumping-onto-wooden-box-in-a-crossfit-training-gym-slow-motion_rulowogh0z__98cac463c25510c76f1af5156bfada96__P360.mp4" type="video/mp4">
+                    <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HEA-fdBPiqmr4hqr/videoblocks-hispanic-woman-jumping-onto-wooden-box-in-a-crossfit-training-gym-slow-motion_rulowogh0z__98cac463c25510c76f1af5156bfada96__P360.mp4" type="video/mp4" alt="Träna upp din spänst videon">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <div class="text-container">
-                  <h2>Card Title</h2>
-                  <p>This is some example text describing the content of the card. You can add more details here.</p>
+                <div class="card__video-text-container">
+                  <h2 class="card__video-text-container-heading">Träna upp din spänst</h2>
+                  <p class="card__video-text-container-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nemo repellendus nostrum vel facilis libero est architecto culpa exercitationem quas, hic consectetur in iusto quia minima commodi ipsum dolor illum!</p>
                 </div>
               </div>
               
         </section>
 
-
-       
-   
-
-
-
-
     </section>
-
-
-
-
-
-
-
-
-  
 
     <footer class="footer">
       <section class="footer__inner">
@@ -228,7 +213,7 @@
 
     </article> -->
 
-    <button onclick="topFunction()" id="GoToTop__Button" title="Go to top">Gå upp</button>
+    <button onclick="topFunction()" id="GoToTop__Button" title="Go to top">&#8679 Upp</button>
 
 
 <script src="script.js"></script>

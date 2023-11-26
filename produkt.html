@@ -7,26 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kompo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     
  
   
+ 
   <nav class="topNav">
     <nav class="topNav__inner">
-        <h3 class="topNav__inner-heading">Gratis leverans över 500kr</h3>
+        <h3 class="topNav__inner-heading">Gratis leverans över 599kr</h3>
         <h3 class="topNav__inner-heading">1-2 dagar leveranstid</h3>
-        <button onclick="myFunction()">Darkmode</button>
-        
+        <h3 class="topNav__inner-heading">Trustpilot 5 / 5</h3>
+        <!-- <button onclick="myFunction()">Darkmode</button> -->
     </nav>
-    
 </nav>
 
-
-
 <header class="nav">
-    <nav class="navbar">
-        <div class="navbar_info-1">
+    <nav class="navbar" id="navbar">
+        <div class="navbar__info-1">
             <div class="overlay" id="overlay"></div>
             <div class="burger-menu" id="burger-menu">
               <div class="burger-icon" id="burger-icon">
@@ -44,29 +43,34 @@
               <a href="index.html" class="logo">Gymiceps</a>
           </div>
 
-            <div class="navbar_info-2">
+            <div class="navbar__info-2">
                 <div class="search">
                     <div class="searchbar">
-                        <input type="text" placeholder="Sök" class="searchbar__input">
-                        <button class="searchbar__button"> Sök</button>
+                      <input type="text" placeholder="Sök produkt" class="searchbar__input">
+                        <button class="searchbar__button"> <i class="fas fa-search"></i> <!-- Font Awesome sökikon --></button>
                     </div>
-
                 </div>
               </div>
         
-        <div class="navbar_info-3" >
-            <h1 class="material-symbols-outlined">
-                shopping_cart
-            </h1>
-            <h1 class="material-symbols-outlined">
-                person
-            </h1>
+        <div class="navbar__info-3" >
+            <div class="navbar__info-3-cart-icon">
+                <svg  width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="navbar__info-3-cart-icon-text">Kundvagn</p>
+              </div>
+              <div class="navbar__info-3-user-icon">
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="34px" height="34px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 0C5.56717 0 4 1.56567 4 3.49804C4 5.43041 5.56717 6.99609 7.5 6.99609C9.43283 6.99609 11 5.43041 11 3.49804C11 1.56567 9.43283 0 7.5 0Z" fill="#fff"/>
+                <path d="M5.5 8.99414C3.56711 8.99414 2 10.5605 2 12.4936V14.9909H13V12.4936C13 10.5605 11.4329 8.99414 9.5 8.99414H5.5Z" fill="#fff"/>
+                </svg>
+                <p class="navbar__info-3-user-icon-text">Mina sidor</p>
+              </div>
         </div>
-
     </nav>
-
-
 </header>
+
 
 
 <section class="category__section">
@@ -87,82 +91,84 @@
    </section>
 
 
-   <section class="cards">
+   <section class="card__section"> 
+
+   <div class="card-container">
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-7_1.jpg?m=1635411013" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-7_1.jpg?m=1635411013" alt="GAAM Whey Vassleprotein Jodgubb" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">GAAM 100% Whey 1 kg Jordgubb</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-2_1.jpg?m=1635410351" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-2_1.jpg?m=1635410351" alt="GAAM Whey Vassleprotein Choklad" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">GAAM 100% Whey 1 kg Choklad </p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-4_1.jpg?m=1635410928" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-4_1.jpg?m=1635410928" alt="GAAM Whey Vassleprotein Vanilj" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">GAAM 100% Whey 1 kg Vanilj</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-17_1.jpg?m=1635410241" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/bilder/artiklar/zoom/PB-1533-17_1.jpg?m=1635410241" alt="GAAM Whey Vassleprotein Karamel" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">GAAM 100% Whey 1 kg Karamel</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
 
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-52245_1.jpg?m=1698746838?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-52245_1.jpg?m=1698746838?w=300" alt="Barebells proteinbar Minty Chocolate" id="card__image-style">
+      <h1 class="card__heading">Barebells</h1>
+      <p class="card__amount">12 x Barebells Minty Chocolate</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-700057_1.jpg?m=1661246302?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-700057_1.jpg?m=1661246302?w=300" alt="Barebells proteinbar Peanut Caramel" id="card__image-style">
+      <h1 class="card__heading">Barebells</h1>
+      <p class="card__amount">12 x Barebells Peanut Caramel</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-582333_1.jpg?m=1667293642?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-582333_1.jpg?m=1667293642?w=300" alt="Barebells proteinbar Banana Dream" id="card__image-style">
+      <h1 class="card__heading">Barebells</h1>
+      <p class="card__amount">12 x Barebells Banana Dream</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-69000_1.jpg?m=1680005337?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-69000_1.jpg?m=1680005337?w=300" alt="Barebells proteinbar Salty Chocolate" id="card__image-style">
+      <h1 class="card__heading">Barebells</h1>
+      <p class="card__amount">12 x Barebells Salty Chocolate</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
  
     <div class="card">
-      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8747_1.jpg?m=1694586266?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src="https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8747_1.jpg?m=1694586266?w=300" alt="GAAM EAA Persika" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">EAA 400 g Persika</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
 
     <div class="card">
-      <img class="card__image" src=" https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-5851_1.jpg?m=1699514938?w=300" alt="" id="card__image-style">
-      <h1 class="card__heading">Tailored Jeans</h1>
-      <p class="card__amount">24x330ml</p>
+      <img class="card__image" src=" https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-5851_1.jpg?m=1699514938?w=300" alt="GAAM BCAA Kaktus Lime" id="card__image-style">
+      <h1 class="card__heading">GAAM</h1>
+      <p class="card__amount">BCAA 400 g Kaktus lime</p>
       <p class="card__price">449:-</p>
-      <button class="card__button">Lägg till i varukorg</button>
+      <button class="card__button" onclick="addToCart(this)">Lägg till i varukorg</button>
     </div>
   
-  
+  </div>
 
 
  
@@ -209,7 +215,7 @@
 
 </footer>
 
-<button onclick="topFunction()" id="GoToTop__Button" title="Go to top">Gå upp</button>
+<button onclick="topFunction()" id="GoToTop__Button" title="Go to top">&#8679 Upp</button>
     <script src="script.js"></script>
 </body>
 </html>

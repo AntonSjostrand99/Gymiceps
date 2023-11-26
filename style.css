@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body{
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 font-family: 'Space Mono', monospace;
-background-color: white;
+background-color: #eeeeee;
 color: black;
-
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
 
 .dark-mode {
     background-color: #343a40;
@@ -31,20 +38,18 @@ color: #eeeeee;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #a970ff;
+  background-color: #007BFF;
   color: white;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 15px 30px;
   border-radius: 4px;
   transition: background-color 0.3s ease; 
 
 }
 
 #GoToTop__Button:hover {
-  background-color: #7c2ff0;
+  background-color: #409afa;
 }
-
-
 
 .topNav {
 
@@ -53,7 +58,7 @@ width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: white;
+background-color: #eeeeee;
 
 }
 
@@ -76,14 +81,14 @@ font-size: 12px;
 .nav {
 background-color: black;
 width: 100vw;
-height: 4rem;
+height: 4.4rem;
 display: flex;
 justify-content: center;
 align-items: center;
 }
     
 .navbar {
-width: 80%;
+width: 85%;
 height: 100%;
 background-color: black;
 display: flex;
@@ -113,6 +118,7 @@ flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    
 }
 
 
@@ -124,6 +130,7 @@ flex-direction: row;
   justify-content: center;
   color: #fff;
   margin-top: 0.8rem;
+  cursor: pointer;
 }
 
 .navbar__info-3-cart-icon svg {
@@ -135,6 +142,8 @@ flex-direction: row;
   font-size: 14px;
   text-align: center;
   margin-top: 0; 
+  color: #fff;
+  cursor: pointer;
 }
 
 .navbar__info-3-user-icon {
@@ -144,6 +153,7 @@ flex-direction: row;
   text-align: center;
   color: #fff;
   margin-top: 0.8rem;
+  cursor: pointer;
 }
 
 .navbar__info-3-user-icon svg {
@@ -155,8 +165,17 @@ flex-direction: row;
   font-size: 14px;
   text-align: center;
   margin-top: 0; 
+  color: #fff;
 }
 
+
+.navbar__info-3-cart-icon:hover {
+  transform: scale(1.05);
+}
+
+.navbar__info-3-user-icon:hover {
+  transform: scale(1.05);
+}
 
 .overlay {
     display: none;
@@ -176,6 +195,8 @@ flex-direction: row;
     z-index: 2;
     color: #eeeeee;
   }
+
+
   
   .burger-icon {
     cursor: pointer;
@@ -185,6 +206,11 @@ flex-direction: row;
     height: 22px;
     justify-content: space-between;
   }
+
+  .burger-icon:hover {
+    transform: scale(1.05);
+  }
+
   
   .bar {
     width: 44px;
@@ -223,15 +249,17 @@ flex-direction: row;
     transition: color 0.3s ease-in-out;
   }
   
-  .menu-list a:hover {
-    color: #a970ff;
-  }
-  
- 
-  .logo {
+.menu-list a:hover {
+    color: black;
+}
+.logo {
 text-decoration: none;
 color: #fff;
 font-size: 32px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .search {
@@ -240,47 +268,49 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 }
-
-
 .searchbar {
 display: flex;
 flex-direction: row;
-color: black;
-}
+color: white;
 
+}
 .searchbar__input {
   padding: 10px;
-  border-color: #495158; /* Blå färg, ändra efter dina önskemål */
+  border-color: #fff; 
+  background-color: #fff;
   border-radius: 5px;
   font-size: 18px;
-  width: 250px;
+  width: 220px;
+  height: 45px;
   outline: none;
   font-weight: bold;
   color: black;
   transition: border-color 0.3s ease-in-out;
+
 }
 
+.searchbar__input::placeholder {
+  color: black; /* Byt ut detta mot önskad färgkod */
+font-size: 16px;
+}
 .searchbar__input:focus {
   border-color: #343a40 /* Mörkare blå färg vid fokus */
 }
-
 .searchbar__button {
-  background-color: #343a40; /* Blå färg för knappen */
+  background-color: #007BFF; /* Blå färg för knappen */
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 15px 20px; 
+  height: 45px;
+  font-size: 18px;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease-in-out;
 }
-
 .searchbar__button:hover {
-  background-color: #343a40; /* Mörkare nyans av blå vid hover */
+  background-color: #409afa;  /* Mörkare nyans av blå vid hover */
 }
-
-
 
 .category__section {
   display: flex;
@@ -289,29 +319,26 @@ color: black;
   justify-content: center;
   width: 100vw;
   margin-bottom: 2rem;
-  }
+  margin-top: 2rem;
+
+}
   
-  .category__section-inner {
+.category__section-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 65%;
+  width: 72%;
+  gap: 20px;
   text-align: center;
-  
-  }
-  
-  .category__section-inner-heading {
+}
+.category__section-inner-heading {
   font-size: 32px;
+}
   
-  
-  }
-  
-  .category__section-inner-text {
-  font-size: 16px;
-  }
-
-
+.category__section-inner-text {
+font-size: 18px;
+}
 
 .filter-navigation__section{
 display: flex;
@@ -330,6 +357,7 @@ justify-content: flex-start;
 gap: 1rem;
 width: 85%;
 height: 100%;
+
 }
   
 .filter-navigation__article-box{
@@ -337,56 +365,137 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 border: 1px solid black;
 padding: 8px 10px;
 cursor: pointer;
+
 }
   
+.filter-navigation__article-box:hover {
+  transform: scale(1.05);
+}
 
 
-
-
-
-
-
-
-.footer {
-  background-color: black;
+.card__section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  color: #fff;
   width: 100vw;
-  font-family: 'Space Mono', monospace;
-  }
+ }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+  grid-gap: 1px 20px;
+  justify-content: space-evenly;
+  padding: 5px 25px;
+  width: 89%;
+}
+
+.card {
   
-  .footer__inner {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  color: #fff;
-  width: 75%;
-  font-family: 'Space Mono', monospace;
-  }
-  
-  .footer__inner-article {
-  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
+  max-height: 550px;
+  background-color: #eeeeee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+ text-transform: uppercase;
+ border: 2px solid #adb5bd;
+
+}
+
+#card__image-style{
+
+height: 220px;
+width: 220px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card__heading,
+.card__amount,
+.card__price {
+  margin: 10px 0;
+}
+
+.card__heading {
+font-size: 32px;
+color: black;
+}
+.card__name {
+font-size: 16px;
+color: black;
+}
+
+.card__amount {
+font-size: 16px;
+color: black;
+}
+
+.card__price {
+font-size: 24px;
+font-weight: bold;
+color: black;
+}
+
+.card__button {
+  /* background-color: #995392; */
+  background-color:  #2d2d2d;
+  font-weight: bolder;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 50px;
+  width: 99%;
+  opacity: 1;
+color: #fff;
+  font-size: 18px;
+}
+
+.card__button:hover {
+
+  background-color:  rgb(77, 75, 75);
+}
+
+
+
+
+.breadcrumbs {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  }
   
-  
-  .footer__inner-bottom {
-  
+}
+
+.breadcrumb-item {
+  margin-right: 10px;
+  color: #a0a0a0;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
-  color: #fff;
-  font-family: 'Space Mono', monospace;
-  
-  }
-  
+}
+
+.breadcrumb-item:last-child {
+  color: white;
+}
+
+.breadcrumb-item .arrow {
+  margin: 0 5px;
+}
 
 
 
@@ -395,8 +504,7 @@ cursor: pointer;
 
 
 
-
-
+/* 
 .cards {
     margin: 0 auto;
     width: 85%;
@@ -422,6 +530,10 @@ cursor: pointer;
   margin: auto;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
 #card__image-style {
 
   height: 300px;
@@ -439,12 +551,13 @@ cursor: pointer;
 .card__heading {
 
   font-size: 1.7rem;
+  font-weight: bold;
 
 }
 
 .card__amount {
 
-font-size: 0.8rem;
+font-size: 0.9rem;
 }
 
 .card__price {
@@ -468,7 +581,7 @@ font-size: 0.8rem;
     color: black;
     margin-bottom: 1rem;
     font-size: 16px;
-  
+  border-color: #fff;
   
 }
 
@@ -477,56 +590,55 @@ font-size: 0.8rem;
 }
 
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 3rem;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Stil för texten i sidfoten */
-footer p {
-    font-size: 14px;
-}
+ */
 
 
 
 
-
-
-
-.card__video {
+  .footer {
+    background-color: black;
     display: flex;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .video-container {
-    flex: 1;
-  }
-  
-  video {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .text-container {
-    flex: 1;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100vw;
+    font-family: 'Space Mono', monospace;
+    margin-top: 6rem;
+    }
+    
+    .footer__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    width: 80%;
+    font-family: 'Space Mono', monospace;
+    margin-top: 2rem;
+    }
+    
+    .footer__inner-article {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    }
+    
+    
+    .footer__inner-bottom {
+    
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
-  
-
-
-
+    flex-direction: column;
+    margin-top: 3rem;
+    color: #fff;
+    gap: 10px;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 2rem;
+    
+    }
+    
